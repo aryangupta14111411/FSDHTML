@@ -1,34 +1,50 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+
+import React from 'react'
+import Student from  './student'
+import StateHandeling from './StateHandeling'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+//   const studentdata= [{
+//     image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3QBUYGUy42_cmH3XJZbERf-uxgCam_BQf6w&s",
+//     name:"Rahul Kumar",
+//     roll:"23456",
+//     college:"Abes Engineering College"
+//   },
+//   {
+//     image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrFkW-JiIyNe-bqvXvVnwh25RDr8ci_LjGMhp24piZ91DrogsrRYnfOrMRTcuydA9SDGQ&usqp=CAU",
+//     name:"Rahul Kumar",
+//     roll:"23456",
+//     college:"Abes Engineering College"
+//   },
+//   {
+//     image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrHWayKKTbqzDDhPtOy4BItQk0PGjVdgrWrw&s",
+//     name:"Rahul Kumar",
+//     roll:"23456",
+//     college:"Abes Engineering College"
+//   }
+// ]
   return (
-    <>
+    <div>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <h2 style={{color:'red'}}>hello react js</h2>
+        <div>
+          <StateHandeling />
+          {/* <Student data={studentdata[0].name} /> */}
+
+          {/* {studentdata.map((ele)=>{
+            return(
+              <Student data={ele} />
+
+            ) */}
+          {/* })} */}
+        </div>
+        <div>
+          {/* <Student image={<img src='https://commondatastorage.googleapis.com/codeskulptor-demos/riceracer_assets/img/srixner.png' height={100} width={100} />} name="Rahul Kumar" roll="2346" college="ABES Engineering college" /> */}
+        </div>
+
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      
+    </div>
   )
 }
 

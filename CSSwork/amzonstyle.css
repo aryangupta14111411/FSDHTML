@@ -5,7 +5,7 @@ body{
 .container{
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    grid-template-rows: repeat(4,1fr);
+    /* grid-template-rows: repeat(4,1fr); */
 
 }
 
@@ -40,7 +40,15 @@ ul li{
 li:hover{
     background-color: navy;
 }
+
+
+.wallpaper{
+    grid-row: 3/4;
+    grid-column: 1/13;
+
+}
 .cards{
+    margin-top: 100px;
     grid-row: 4/5;
     grid-column: 1/13;
     display: flex;
@@ -55,8 +63,35 @@ li:hover{
     width: 200px;
 }
 
-.card1{
+.card2{
 
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+
+}
+
+.card21{
+    background-color: goldenrod;
+    border: 1px solid ;
+}
+
+.card22{
+    background-color: silver;
+    border: 1px solid ;
+}
+
+.card23{
+    background-color: yellow;
+    border: 1px solid ;
+}
+
+.card24{
+    background-color:skyblue;
+    border: 1px solid ;
+}
+.card1{
+    /* background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/Events/img24/Jupiter24/Phase3/J24_GW_PC_CC_SAD_2x._SY608_CB545060597_.jpg"); */
     display:grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,1fr);
@@ -65,6 +100,7 @@ li:hover{
 
 .card11{
     background-color: brown;
+    /* background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/Events/img24/Jupiter24/Phase3/J24_GW_PC_CC_SAD_2x._SY608_CB545060597_.jpg"); */
     border: 1px solid ;
 }
 
@@ -80,5 +116,32 @@ li:hover{
 
 .card14{
     background-color: rgb(144, 22, 22);
+    border: 1px solid ;
+}
+.card3{
+
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+
+}
+
+.card31{
+    background-color: goldenrod;
+    border: 1px solid ;
+}
+
+.card32{
+    background-color: silver;
+    border: 1px solid ;
+}
+
+.card33{
+    background-color: yellow;
+    border: 1px solid ;
+}
+
+.card34{
+    background-color:skyblue;
     border: 1px solid ;
 }
