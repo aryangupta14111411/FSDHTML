@@ -1,45 +1,64 @@
-
 import React from 'react'
-import Student from  './student'
-import StateHandeling from './StateHandeling'
+import Student from './Student'
+import ImageManipulation from './ImageManipulation'
+import UseEffectWork from './UseEffectWork'
+import Login from './Login'
+import Registeration from './Registration'
+
 
 function App() {
-//   const studentdata= [{
-//     image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3QBUYGUy42_cmH3XJZbERf-uxgCam_BQf6w&s",
-//     name:"Rahul Kumar",
-//     roll:"23456",
-//     college:"Abes Engineering College"
-//   },
-//   {
-//     image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrFkW-JiIyNe-bqvXvVnwh25RDr8ci_LjGMhp24piZ91DrogsrRYnfOrMRTcuydA9SDGQ&usqp=CAU",
-//     name:"Rahul Kumar",
-//     roll:"23456",
-//     college:"Abes Engineering College"
-//   },
-//   {
-//     image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrHWayKKTbqzDDhPtOy4BItQk0PGjVdgrWrw&s",
-//     name:"Rahul Kumar",
-//     roll:"23456",
-//     college:"Abes Engineering College"
-//   }
-// ]
+  // const studentdata= [{
+  //   image:"https://missionfinancialservices.net/wp-content/uploads/2019/04/aprilblog2.jpg",
+  //   name:"Rahul Kumar",
+  //   roll:"23456",
+  //   college:"Abes Engineering College"
+  // },
+  // {
+  //   image:"https://tse2.mm.bing.net/th?id=OIP.5F3SyVGz57QTefASUtBtpgHaHa&pid=Api&P=0&h=180",
+  //   name:"Arjun Kumar",
+  //   roll:"123456",
+  //   college:"Abes Engineering College"
+
+  // },
+  // {
+  //   image:"https://commondatastorage.googleapis.com/codeskulptor-demos/riceracer_assets/img/srixner.png",
+  //   name:"Harshit Kumar",
+  //   roll:"23456",
+  //   college:"Abes Engineering College"
+  // }
+  // ]
   return (
     <div>
       <div>
         <h2 style={{color:'red'}}>hello react js</h2>
         <div>
-          <StateHandeling />
-          {/* <Student data={studentdata[0].name} /> */}
+          {/* <Login /> */}
+          <br></br>
+          <Registeration/>
+        </div>
+        <div>
+          {/* <UseEffectWork/> */}
+        </div>
+        <div>
+          {/* <StateHandling /> */}
+          
+          {/* <Student data={studentdata} /> */}
+          {/* {
+            studentdata.map((ele)=>{
 
-          {/* {studentdata.map((ele)=>{
-            return(
-              <Student data={ele} />
+              return (
+                <Student data={ele} />
 
-            ) */}
-          {/* })} */}
+              )
+            })
+          } */}
+         {/* <ImageManipulation /> */}
         </div>
         <div>
           {/* <Student image={<img src='https://commondatastorage.googleapis.com/codeskulptor-demos/riceracer_assets/img/srixner.png' height={100} width={100} />} name="Rahul Kumar" roll="2346" college="ABES Engineering college" /> */}
+        </div>
+        <div>
+          {/* imageManupulation */}
         </div>
 
       </div>
